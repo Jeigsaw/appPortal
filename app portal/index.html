@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="applicant's portal">
+        <meta name="author" content="Suman Thapa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App portal | Gates.edu</title>		
+
+        <!-- links for fonts, css and js libraries-->
+        <link rel="icon" href="img/ico.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher:700i | Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <section id="loginBx">
+            <table id="errMsg"> 
+                <tr id="errUPass">
+                    <td><i>!</i></td> 
+                    <td><p>Invalid username or passcode. Please check them.</p></td>
+                    <td><a href="javascript:void(0)">x</a></td>
+                </tr>
+            </table>
+            <div id="container" class="row">
+                <div id="lftbar" class="col m4">
+                    <img src="front_logo.svg">
+                    <h3>GATES</h3>
+                    <p>Applicant's portal</p>
+                    <p id="notice">(C) GATES 2017</p>
+                </div>
+                <div id="rtbar" class="col m8">
+                    <p>Input your credentials below</p>
+                    <form>
+                        <label> username :
+                            <input type="text">
+                        </label>
+                        <label> passcode :
+                            <input type="password">
+                        </label>
+                        <p><a href=javascript:void(0)>forgot passcode</a></p>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Login 
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</html>
