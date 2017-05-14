@@ -15,10 +15,16 @@ html, body{
 
 #loginBx #container{
     background: linear-gradient(rgb(25,25,112), rgb(4, 4, 45));;
-    width: 45vw;
+    width: 50%;
     margin: 0 auto;
     box-shadow: 0 6px 35px #666;
     position: relative;
+}
+
+@media only screen and (max-width:800px){
+    #loginBx #container {
+        width: 60%;
+    }
 }
 
 #lftbar, #rtbar{
@@ -36,6 +42,7 @@ html, body{
 #lftbar h3{
     font-family: 'Philosopher', sans-serif;
     color: #ccc;
+    font-size: 2.3em;
 }
 #lftbar p{
     text-transform: uppercase;
