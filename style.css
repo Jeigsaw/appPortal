@@ -1,3 +1,16 @@
+/* font declaration */
+@font-face {
+  font-family: 'ReducedArt';
+  src:  url('fonts/ReducedArt.eot?c3azzl');
+  src:  url('fonts/ReducedArt.eot?c3azzl#iefix') format('embedded-opentype'),
+    url('fonts/ReducedArt.ttf?c3azzl') format('truetype'),
+    url('fonts/ReducedArt.woff?c3azzl') format('woff'),
+    url('fonts/ReducedArt.svg?c3azzl#ReducedArt') format('svg');
+}
+
+i{
+    font-family: "ReducedArt";
+}
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -24,6 +37,10 @@ html, body{
 @media only screen and (max-width:800px){
     #loginBx #container {
         width: 60%;
+    }
+    
+    #errUPass i{
+        margin: 0 5px;
     }
 }
 
@@ -106,9 +123,10 @@ html, body{
 }
 
 #errUPass i{
-    padding: 0 15px;
+    font-size: 1.5em;
+    padding: 0 5px;
     font-style: normal;
-    color: #ffb242;
+    color: #f8ef8a;
 }
 
 #errUPass p{
